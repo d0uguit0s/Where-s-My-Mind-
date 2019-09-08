@@ -1,41 +1,45 @@
 body{
-	text-align: center;
+	text-align: center;/*Alinhamento do texto*/
 	background-color: #ccc;/*Cor de fundo da página*/
-    height: 100%;
-    width: 70%;
+    height: 100%;/*Altura do corpo da página*/
+    width: 70%;/*Largura da página*/
 	margin: 0 auto;
 }
 .logo{
 	float: left;/*Deixa o titulo do lado da logo*/
 }
 .titulo{
-	padding: 0.5% 20% 0.5% 27%;/*Bordar interna do titulo*/
+	padding: 0.5% 20% 0.5% 27%;/*Borda interna do titulo*/
 	font-size: 4em;/*Tamanho da fonte (responsivo)*/
 }
 .menu ul li{
+	padding: 0%;
     background-color: #000;/*Define a cor de fundo dos links*/
     color: #fff;
-	float: left;
-	width: 13%;
-    text-decoration: none;
-    list-style: none;
-    text-align: center;
-    line-height: 200%;
-	font-size: 20px;/*Tamanho da letra*/
+	float: left;/*Deixa todos os itens na mesma linha*/
+	width: 13%;/*Largura do menu*/
+    text-decoration: none;/*Tirando sublinhado do link*/
+    list-style: none;/*Tirando o estilo da lista*/
+    text-align: center;/*Alinhamento do texto dos links*/
+    line-height: 200%;/*Tamanho da linha do menu*/
+	font-size: 1.3em;/*Tamanho da letra*/
 }
 .menu ul li:hover{
+	/* Cor dos botões com o mouse em cima */
     background-color: #fff;
     color: #000;
 }
 .pesquisa input{
+	/* Campo de pesquisa */
 	border:0px solid #222;
     background-color:#aaa;
     width:15.5%;
-	height:30px;
+	height: 1.3em;
     margin:0 auto;
     padding:5px 0 5px 5px;
     float:left; 
 }
+/* Botão de pesquisa */
 .pesquisa button{
 	text-align: center;
 	border:0px solid #222;
