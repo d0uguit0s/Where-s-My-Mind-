@@ -10,7 +10,7 @@ body{
 }
 .titulo{
 	padding: 0.5% 20% 0.5% 27%;/*Borda interna do titulo*/
-	font-size: 4em;/*Tamanho da fonte (responsivo)*/
+	font-size: 3em;/*Tamanho da fonte (responsivo)*/
 	float: left;
 }
 .menu ul li{
@@ -24,6 +24,7 @@ body{
     text-align: center;/*Alinhamento do texto dos links*/
     line-height: 200%;/*Tamanho da linha do menu*/
 	font-size: 1.3em;/*Tamanho da letra*/
+	margin-top: 1%;
 }
 .menu ul li:hover{
 	/* Cor dos botões com o mouse em cima */
@@ -37,7 +38,8 @@ body{
     width:15.5%;
 	height: 2.3em;
     margin:0 auto;
-    padding:0.5% 0 0.4% 0.5%;
+	padding:0.5% 0 0.4% 0.5%;
+	margin-top: 1%;
 }
 /* Botão de pesquisa */
 .pesquisa button{
@@ -49,6 +51,7 @@ body{
     padding:0.5% 0 0.4% 0.5%b;
 	float:left;
 	transition: background-color 1s;
+	margin-top: 1%;
 }
 .pesquisa button:hover{
 	background-color: #000;
@@ -58,17 +61,21 @@ body{
 .conto_semanal{
 	border: #000 solid 1px;
 	float: left;
-	width: 30%;
+	width: 25%;
 	height: 100%;
 	text-align: left;
 	padding-bottom:27.6%; 
+	margin-top: 1%;
 }
 .artigos article p{
 	border: #000 solid 1px;
-	width: 69.6%;
+	width: 74%;
 	float: right;
+	margin-top: 1%;
+	padding-top: 2%;
 }
 footer{
+	margin-top: 1%;
 	border: #000 solid 1px;
 	height: 100%;
 	width: 100%;
