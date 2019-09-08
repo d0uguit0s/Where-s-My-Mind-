@@ -1,67 +1,97 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-	<title>Where's My Mind?</title>
-	<meta charset="utf-8">
-	<meta name="dscription" content="Um site que tem de tudo um pouco">
-	<meta name="author" content="Douglas e Giovanna">
-	<meta name="keywords" content="aleatório,jogos,livros,mangás,animes,filmes,séries,receitas">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/padrao.css">
-</head>
-
-<body>
-	<header>
-		<h1 class="logo">Logo</h1>
-		<h1 class="titulo"><strong>Where's My Mind?</strong></h1>
-		<nav>
-			<ul>
-				<a href="tv.html">
-					<li>TV
-						<!-- <ul>
-							<a href="series.html">
-								<li>Séries</li>
-							</a>
-							<a href="filmes.html">
-								<li>Filmes</li>
-							</a>
-							<a href="series.html">
-								<li>Animes</li>
-							</a>
-
-							<a href="animacoes.html">
-								<li>Animações</li>
-							</a>
-							<a href="documentarios.html">
-								<li>Documentários</li>
-							</a>
-						</ul> -->
-					</li>
-				</a>
-				<a href="leituras.html">
-					<li>Leituras</li>
-				</a>
-				<a href="viagens.html">
-					<li>Viagens</li>
-				</a>
-				<a href="receitas.html">
-					<li>Receitas</li>
-				</a>
-				<a href="jogos.html">
-					<li>Jogos</li>
-				</a>
-				<a href="outros.html">
-					<li>Outros</li>
-				</a>
-			</ul>
-		</nav>
-	</header>
-	<section>
-	</section>
-	<footer>
-
-	</footer>
-</body>
-
-</html>
+body{
+	text-align: center;
+	background-color: #ccc;/*Cor de fundo da página*/
+    height: 100%;
+    width: 70%;
+	margin: 0 auto;
+}
+.logo{
+	float: left;/*Deixa o titulo do lado da logo*/
+}
+.titulo{
+	padding: 0.5% 20% 0.5% 27%;/*Bordar interna do titulo*/
+	font-size: 4em;/*Tamanho da fonte (responsivo)*/
+}
+.menu ul li{
+    background-color: #000;/*Define a cor de fundo dos links*/
+    color: #fff;
+	float: left;
+	width: 13%;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    line-height: 200%;
+	font-size: 20px;/*Tamanho da letra*/
+}
+.menu ul li:hover{
+    background-color: #fff;
+    color: #000;
+}
+.pesquisa input{
+	border:0px solid #222;
+    background-color:#aaa;
+    width:15.5%;
+	height:30px;
+    margin:0 auto;
+    padding:5px 0 5px 5px;
+    float:left; 
+}
+.pesquisa button{
+	text-align: center;
+	border:0px solid #222;
+	height:40px;
+	width: 6%;
+    margin:0 auto;
+    padding:5px 0 5px 5px;
+	float:left;
+	transition: background-color 1s;
+}
+.pesquisa button:hover{
+	background-color: #000;
+	color: #fff;
+	cursor: pointer;
+}
+.conto_semanal{
+	border: #000 solid 1px;
+	float: left;
+	width: 30%;
+	height: 100%;
+	text-align: left;
+	padding-bottom:27.6%; 
+}
+.artigos article p{
+	border: #000 solid 1px;
+	width: 69.6%;
+	float: right;
+}
+footer{
+	border: #000 solid 1px;
+	height: 100%;
+	width: 100%;
+}
+.mapa_site{
+	float: left;
+	padding: 12% 12% 12% 12%;
+	border: #000 solid 1px;
+}
+.criadores{
+	float: left;
+	padding: 0% 12% 12% 12%;
+	border: #000 solid 1px;
+	margin: 0 auto;
+}
+.criadores h1{
+	font-size: 1em;
+}
+.criadores a{
+	text-decoration: none;
+}
+.criadores ul{
+	
+	border: #000 solid 1px;
+}
+.feedback{
+	float: left;
+	padding: 12%;
+	border: #000 solid 1px;
+}
