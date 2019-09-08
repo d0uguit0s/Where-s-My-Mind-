@@ -88,7 +88,7 @@ footer{
 }
 .criadores{
 	float: left;
-	padding: 0% 12% 12% 12%;
+	padding: 0% 13.1% 12% 13.1%;
 	border: #000 solid 1px;
 	margin: 0 auto;
 }
@@ -99,11 +99,10 @@ footer{
 	text-decoration: none;
 }
 .criadores ul{
-	
 	border: #000 solid 1px;
 }
 .feedback{
-	float: left;
+	float: right;
 	padding: 12%;
 	border: #000 solid 1px;
 }
