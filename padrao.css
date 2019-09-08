@@ -11,6 +11,7 @@ body{
 .titulo{
 	padding: 0.5% 20% 0.5% 27%;/*Borda interna do titulo*/
 	font-size: 4em;/*Tamanho da fonte (responsivo)*/
+	float: left;
 }
 .menu ul li{
 	padding: 0%;
@@ -34,10 +35,9 @@ body{
 	border:0px solid #222;
     background-color:#aaa;
     width:15.5%;
-	height: 1.3em;
+	height: 2.3em;
     margin:0 auto;
-    padding:5px 0 5px 5px;
-    float:left; 
+    padding:0.5% 0 0.4% 0.5%;
 }
 /* Botão de pesquisa */
 .pesquisa button{
@@ -46,7 +46,7 @@ body{
 	height:40px;
 	width: 6%;
     margin:0 auto;
-    padding:5px 0 5px 5px;
+    padding:0.5% 0 0.4% 0.5%b;
 	float:left;
 	transition: background-color 1s;
 }
@@ -72,6 +72,7 @@ footer{
 	border: #000 solid 1px;
 	height: 100%;
 	width: 100%;
+	float: left;
 }
 .mapa_site{
 	float: left;
