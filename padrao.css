@@ -1,54 +1,97 @@
 body{
+	text-align: center;
 	background-color: #ccc;/*Cor de fundo da página*/
+    height: 100%;
+    width: 70%;
+	margin: 0 auto;
 }
 .logo{
 	float: left;/*Deixa o titulo do lado da logo*/
-	padding: 2.5%;/*Posição da logo*/
 }
 .titulo{
 	padding: 0.5% 20% 0.5% 27%;/*Bordar interna do titulo*/
-	font-size: 5em;/*Tamanho da fonte (responsivo)*/
-	letter-spacing: 0em;/*Espaço entre as letras*/
+	font-size: 4em;/*Tamanho da fonte (responsivo)*/
 }
- nav{
-	width: 50%;/*Largura da barra de navegação*/
-	margin: 0px auto;/*Define a posição do menu*/
+.menu ul li{
+    background-color: #000;/*Define a cor de fundo dos links*/
+    color: #fff;
+	float: left;
+	width: 13%;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    line-height: 200%;
+	font-size: 20px;/*Tamanho da letra*/
 }
-nav ul{
-	list-style: none;/*Remove as características padrões da lista*/
-	position: absolute;
-	top: 15%;
-	left: 0%;
+.menu ul li:hover{
+    background-color: #fff;
+    color: #000;
 }
-nav li{
-	display: inline-block;
-	background-color: #000;
-	padding: 10px;
-	margin: -2px;
-	border-radius: 5px;
-	transition: background-color 1s;
+.pesquisa input{
+	border:0px solid #222;
+    background-color:#aaa;
+    width:15.5%;
+	height:30px;
+    margin:0 auto;
+    padding:5px 0 5px 5px;
+    float:left; 
+}
+.pesquisa button{
 	text-align: center;
-	list-style: none;
-	/* width: 0%; */
+	border:0px solid #222;
+	height:40px;
+	width: 6%;
+    margin:0 auto;
+    padding:5px 0 5px 5px;
+	float:left;
+	transition: background-color 1s;
 }
-nav li:hover{
-	background-color: #fff;
-}
-/*nav a{
-	color: #fff;
-	text-decoration: none;
-	transition: color 1s;
-}
-nav a:hover{
-	color: #000;
-}
-ul ul{
-	display: none;
-	padding: 0;
-}
-li:hover ul{
-	display: block;
-}
-ul ul li:hover{
+.pesquisa button:hover{
 	background-color: #000;
-} */
+	color: #fff;
+	cursor: pointer;
+}
+.conto_semanal{
+	border: #000 solid 1px;
+	float: left;
+	width: 30%;
+	height: 100%;
+	text-align: left;
+	padding-bottom:27.6%; 
+}
+.artigos article p{
+	border: #000 solid 1px;
+	width: 69.6%;
+	float: right;
+}
+footer{
+	border: #000 solid 1px;
+	height: 100%;
+	width: 100%;
+}
+.mapa_site{
+	float: left;
+	padding: 12% 12% 12% 12%;
+	border: #000 solid 1px;
+}
+.criadores{
+	float: left;
+	padding: 0% 12% 12% 12%;
+	border: #000 solid 1px;
+	margin: 0 auto;
+}
+.criadores h1{
+	font-size: 1em;
+}
+.criadores a{
+	text-decoration: none;
+}
+.criadores ul{
+	
+	border: #000 solid 1px;
+}
+.feedback{
+	float: left;
+	padding: 12%;
+	border: #000 solid 1px;
+}
