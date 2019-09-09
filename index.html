@@ -7,17 +7,22 @@
 	<meta name="dscription" content="Um site que tem de tudo um pouco">
 	<meta name="author" content="Douglas e Giovanna">
 	<meta name="keywords" content="aleatório,jogos,livros,mangás,animes,filmes,séries,receitas">
-	<link rel="stylesheet" type="text/css" href="projeto.css">
-	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="css/teste.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
 </head>
 
 <body>
 	<div class="main">
 		<header>
 			<div class="topo">
-				<h1 class="logo"><img src="logo01.png"> </h1>
+				<a href="index.html" class="logo"><img src="img/logo1.png"></a>
 				<h1 class="titulo"><strong>Where's My Mind?</strong></h1>
-				<h1 class="login">Login</h1>
+				<div class="login">
+					E-mail: <input type="email" class="e-mail">
+					Senha: <input type="password" class="senha">
+					<button type="button" class="logar">Login</button>
+					<p>Ainda não tem <a href="#">cadastro?</a></p>
+				</div>
 			</div>
 			<div class="topo2">
 				<nav class="menu">
@@ -44,7 +49,7 @@
 				</nav>
 				<div class="pesquisa">
 					<input type="text" placeholder="Busca...">
-					<button>Buscar...</button>
+					<button><img src="img/lupa.png" alt=""></button>
 				</div>
 			</div>
 		</header>
