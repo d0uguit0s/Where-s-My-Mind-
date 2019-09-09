@@ -1,85 +1,89 @@
-body{
-	text-align: center;/*Alinhamento do texto*/
-	background-color: #ccc;/*Cor de fundo da página*/
-    height: 100%;/*Altura do corpo da página*/
-    width: 70%;/*Largura da página*/
-	margin: 0 auto;
+body, html{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    max-width: 1200px;
+    background-color: #eee;
+    margin: 0 auto;
+}
+.topo{
+    width: 100%;
 }
 .logo{
-	float: left;/*Deixa o titulo do lado da logo*/
+    float: left;
+    margin: 0 auto;
 }
 .titulo{
-	padding: 0.5% 20% 0.5% 27%;/*Borda interna do titulo*/
-	font-size: 3em;/*Tamanho da fonte (responsivo)*/
-	float: left;
+    margin: 0 auto;
+    display: inline;
+}
+.login{    
+    float: right;
+    margin: 0 auto;
+}
+.topo2{
+    width: 100%;
+    float: left;
+}
+.menu{
+    float: left;
+}
+.menu ul{
+    list-style: none;
+    float: left;
+    margin: 11.5px 10px 0px 0;
 }
 .menu ul li{
-	padding: 0%;
-    background-color: #000;/*Define a cor de fundo dos links*/
-    color: #fff;
-	float: left;/*Deixa todos os itens na mesma linha*/
-	width: 13%;/*Largura do menu*/
-    text-decoration: none;/*Tirando sublinhado do link*/
-    list-style: none;/*Tirando o estilo da lista*/
-    text-align: center;/*Alinhamento do texto dos links*/
-    line-height: 200%;/*Tamanho da linha do menu*/
-	font-size: 1.3em;/*Tamanho da letra*/
-	margin-top: 1%;
+    display: inline-block;
+    background: #000;
+    padding: 10px 40px 10px 40px;
+    margin-right: -11px;
+    text-align: center;
 }
-.menu ul li:hover{
-	/* Cor dos botões com o mouse em cima */
-    background-color: #fff;
-    color: #000;
+.menu ul a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fff;
+}
+.pesquisa{
+    float: right;
+    padding: 10px ;
 }
 .pesquisa input{
-	/* Campo de pesquisa */
-	border:0px solid #222;
-    background-color:#aaa;
-    width:15.5%;
-	height: 2.3em;
-    margin:0 auto;
-	padding:0.5% 0 0.4% 0.5%;
-	margin-top: 1%;
+    padding: 10px 40px 10px 0px;
+    margin-left: -4px;
+    height: 20px;
+    width: 200px;
 }
-/* Botão de pesquisa */
 .pesquisa button{
-	text-align: center;
-	border:0px solid #222;
-	height:40px;
-	width: 6%;
-    margin:0 auto;
-    padding:0.5% 0 0.4% 0.5%b;
-	float:left;
-	transition: background-color 1s;
-	margin-top: 1%;
+    height: 20px;
+    width: 65px;
 }
-.pesquisa button:hover{
-	background-color: #000;
-	color: #fff;
-	cursor: pointer;
+.cont{
+    float: left;
+    width: 100%;
 }
 .conto_semanal{
+    float: left;
+    width: 300px;
 	border: #000 solid 1px;
-	float: left;
-	width: 25%;
-	height: 100%;
-	text-align: left;
-	padding-bottom:27.6%; 
-	margin-top: 1%;
 }
-.artigos article p{
-	border: #000 solid 1px;
-	width: 74%;
-	float: right;
-	margin-top: 1%;
-	padding-top: 2%;
+.artigos{
+    float: right;
+    width: 895px;
 }
-footer{
-	margin-top: 1%;
+.artigos p{
+    margin: 10px;
+    padding: 10px;
 	border: #000 solid 1px;
-	height: 100%;
-	width: 100%;
-	float: left;
+}
+.artigos .sem_margem{
+    margin-top: 0;
+}
+.rodape{
+    width: 100%;
+    float: left;
 }
 .mapa_site{
 	float: left;
