@@ -6,16 +6,20 @@ body, html{
     max-width: 1200px;
     background-color: #eee;
     margin: 0 auto;
+    overflow: hidden;
 }
 .topo{
     width: 100%;
+    margin-top: 30px;
 }
 .logo{
     float: left;
     margin: 0 auto;
 }
 .titulo{
-    margin: 0 auto;
+    font-size: 50px;
+	padding: 10px 260px 10px 260px;
+	margin: 0 auto;
     display: inline;
 }
 .login{    
