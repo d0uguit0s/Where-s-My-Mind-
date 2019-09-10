@@ -1,182 +1,286 @@
-body, html{
-    margin: 0;
-    padding: 0;
-}
-.main{
-    max-width: 1200px;
-    background-color: lightgray;
-    margin: 0 auto;
-    overflow: hidden;
-}
-.topo{
-    width: 100%;
-    height: 100%;
-}
-.logo img{
-	width: 150px;    /* largura da imagem */
-	height: 150px;   /*  altura da imagem  */
-	padding-top: 10px; /* margem do topo */
-    float: left;
-    margin: 0 auto;
-}
-.titulo{
-    font-size: 6em;
-    padding: 50px 20px 0 20px;
-    float: left;
-}
-.login{    
-    float: right;
-    margin: 30px 30px 0 0;
-}
-.login .e-mail{
-    display: block;
-    padding: 4px 5px;
-    margin-bottom: 5px;
-    border: none;
-}
-.login .senha{
-    display: block;
-    padding: 4px 5px;
-    border: none;
-}
-.login .logar{
-    display: block;
-    border: none;
-    text-decoration: none;
-    text-align: center;
-    padding: 10px 0px;
-    width: 100%;
-    margin-bottom: 5px;
-    background-color: #999;
-    transition: background-color 0.5s;
-}
-.login .logar:hover{    
-    background-color: #bbb;
-    color: #222;
-    cursor: pointer;
-}
-.login p{
-    text-align: center;
-    font-size: 0.8em;
-}
-.topo2{
-    width: 100%;
-    float: left;
-    margin: 10px 0;
-}
-.menu{
-    float: left;
-    margin: 11.5px 10px 0px 0;
-}
-.menu ul{
-    list-style: none;
-    float: left;
-}
-.menu ul li{
-    display: inline-block;
-    background: #000;
-    padding: 10px 30px 10px 30px;
-    margin-right: -13px;
-    text-align: center;
-    transition: background-color 0.4s;
-    width: 100px;
-}
-.menu ul li:hover{
-    background-color: #fff;
-}
-.menu ul a{
-    font-size: 1.5em;
-    text-decoration: none;
-    color: #fff;
-    transition: color 1s;
-}
-.menu ul a:hover{
-    color: #000;
-}
-.pesquisa{
-    margin-top: 3px;
-}
-.pesquisa input{
-    padding: 10px 40px 10px 10px;
-    height: 24px;
-    width: 159px;
-    background-color: #eee;
-    border: none;
-    float: left;
-    margin-left: 4px;
-    margin-top: 8.5px;
-}
-.pesquisa button{
-    height: 43px;
-    width: 40.5px;
-    background-color: #999;
-    color: #000;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    float: right;
-    margin-top: 8.5px;
-    transition: background-color 0.4s;
-}
-.pesquisa button:hover{
-    background-color: #bbb;
-    color: #222;
-    cursor: pointer;
-}
-.pesquisa button img{
-    width: 30px;    /* largura da imagem */
-	height: 30px;   /*  altura da imagem  */
-	margin-top: 2px; /* margem do topo */
-    margin: 0 auto;
-}
-.cont{
-    float: left;
-    width: 100%;
-}
-.conto_semanal{
-    float: left;
-    width: 300px;
-	border: #000 solid 1px;
-}
-.artigos{
-    float: right;
-    width: 895px;
-}
-.artigos p{
-    margin: 10px;
-    padding: 10px;
-	border: #000 solid 1px;
-}
-.artigos .sem_margem{
-    margin-top: 0;
-}
-.rodape{
-    width: 100%;
-    float: left;
-}
-.mapa_site{
-	float: left;
-	padding: 12% 12% 12% 12%;
-	border: #000 solid 1px;
-}
-.criadores{
-	float: left;
-	padding: 0% 13.1% 12% 13.1%;
-	border: #000 solid 1px;
-	margin: 0 auto;
-}
-.criadores h1{
-	font-size: 1em;
-}
-.criadores a{
-	text-decoration: none;
-}
-.criadores ul{
-	border: #000 solid 1px;
-}
-.feedback{
-	float: right;
-	padding: 12%;
-	border: #000 solid 1px;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Where's My Mind?</title>
+	<meta charset="utf-8">
+	<meta name="dscription" content="Um site que tem de tudo um pouco">
+	<meta name="author" content="Douglas e Giovanna">
+	<meta name="keywords" content="aleatório,jogos,livros,mangás,animes,filmes,séries,receitas">
+	<link rel="stylesheet" type="text/css" href="css/teste.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+</head>
+
+<body>
+	<div class="main">
+		<header>
+			<div class="topo">
+				<a href="index.html" class="logo"><img src="img/logo1.png" alt="Logo"></a>
+				<h1 class="titulo"><strong>Where's My Mind?</strong></h1>
+				<div class="login">
+					E-mail: <input type="email" class="e-mail">
+					Senha: <input type="password" class="senha">
+					<button type="button" class="logar">Login</button>
+					<p>Ainda não tem <a href="#">cadastro?</a></p>
+				</div>
+			</div>
+			<div class="topo2">
+				<nav class="menu">
+					<ul>
+						<li>
+							<a href="jogos.html">Jogos</a>
+							<ul>
+								<li><a href="#">Teste</a></li>
+								<li><a href="#">Teste</a></li>
+								<li><a href="#">Teste</a></li>
+								<li><a href="#">Teste</a></li>
+							</ul>
+						</li>|
+						<li>
+							<a href="leituras.html">Leituras</a>
+							<ul>
+								<li><a href="#">Teste</a></li>
+								<li><a href="#">Teste</a></li>
+								<li><a href="#">Teste</a></li>
+								<li><a href="#">Teste</a></li>
+							</ul>
+						</li>|
+						<li>
+							<a href="receitas.html">Receitas</a>
+							<ul>
+								<li><a href="#">Teste</a></li>
+								<li><a href="#">Teste</a></li>
+								<li><a href="#">Teste</a></li>
+								<li><a href="#">Teste</a></li>
+							</ul>
+						</li>|
+						<li>
+							<a href="tv.html">TV</a>
+							<ul>
+								<li><a href="#">Teste</a></li>
+								<li><a href="#">Teste</a></li>
+								<li><a href="#">Teste</a></li>
+								<li><a href="#">Teste</a></li>
+							</ul>
+						</li>|
+						<li>
+							<a href="viagens.html">Viagens</a>
+							<ul>
+								<li><a href="#">Teste</a></li>
+								<li><a href="#">Teste</a></li>
+								<li><a href="#">Teste</a></li>
+								<li><a href="#">Teste</a></li>
+							</ul>
+						</li>|
+						<li>
+							<a href="outros.html">Outros</a>
+							<ul>
+								<li><a href="#">Teste</a></li>
+								<li><a href="#">Teste</a></li>
+								<li><a href="#">Teste</a></li>
+								<li><a href="#">Teste</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div class="pesquisa">
+					<input type="text" placeholder="Busca...">
+					<button><img src="img/lupa.png" alt="lupa"></button>
+				</div>
+			</div>
+		</header>
+		<section class="cont">
+			<div class="conto_semanal">
+				<aside>
+					<p>Ipsum diam ut ea no consetetur dolores, gubergren erat sea amet diam labore dolor sit. Ipsum
+						consetetur
+						vero duo est erat sea diam vero, nonumy consetetur elitr dolore dolores et takimata et
+						aliquyam
+						ut,
+						eos
+						tempor vero rebum diam takimata ut diam. Ipsum nonumy erat takimata dolore ut dolores labore
+						dolores.
+						Stet dolor accusam kasd ea, ut stet vero sit est erat stet sadipscing sed. Dolores invidunt
+						diam
+						sit
+						ipsum aliquyam magna ut amet elitr. Aliquyam sit justo ea ea aliquyam stet no aliquyam
+						lorem,
+						invidunt
+						nonumy sed vero dolor dolore dolores dolores. Sed clita nonumy sed erat, labore voluptua
+						accusam
+						ipsum
+						amet invidunt. Et et sanctus eos amet duo dolores eos aliquyam, at vero ipsum dolor
+						gubergren
+						magna
+						sadipscing rebum aliquyam, invidunt dolor et kasd amet et takimata ipsum elitr takimata. Duo
+						sanctus
+						lorem sea at. Et diam ea diam et sed voluptua. Sed clita nonumy nonumy no elitr tempor sit.
+						Et
+						sadipscing nonumy no sea. Dolor dolore dolor clita invidunt et, labore erat lorem labore et.
+						Lorem
+						at
+						sit clita dolores accusam ipsum eirmod diam, eirmod dolores dolores et voluptua dolores
+						lorem
+						stet
+						sanctus, lorem kasd sit magna justo amet sit et. Sed ipsum ea sadipscing rebum sit.</p>
+				</aside>
+			</div>
+			<div class="artigos">
+				<article>
+					<p class="sem_margem">Ipsum diam ut ea no consetetur dolores, gubergren erat sea amet diam labore
+						dolor sit. Ipsum
+						consetetur
+						vero duo est erat sea diam vero, nonumy consetetur elitr dolore dolores et takimata et
+						aliquyam
+						ut,
+						eos
+						tempor vero rebum diam takimata ut diam. Ipsum nonumy erat takimata dolore ut dolores labore
+						dolores.
+						Stet dolor accusam kasd ea, ut stet vero sit est erat stet sadipscing sed. Dolores invidunt
+						diam
+						sit
+						ipsum aliquyam magna ut amet elitr. Aliquyam sit justo ea ea aliquyam stet no aliquyam
+						lorem,
+						invidunt
+						nonumy sed vero dolor dolore dolores dolores. Sed clita nonumy sed erat, labore voluptua
+						accusam
+						ipsum
+						amet invidunt. Et et sanctus eos amet duo dolores eos aliquyam, at vero ipsum dolor
+						gubergren
+						magna
+						sadipscing rebum aliquyam, invidunt dolor et kasd amet et takimata ipsum elitr takimata. Duo
+						sanctus
+						lorem sea at. Et diam ea diam et sed voluptua. Sed clita nonumy nonumy no elitr tempor sit.
+						Et
+						sadipscing nonumy no sea. Dolor dolore dolor clita invidunt et, labore erat lorem labore et.
+						Lorem
+						at
+						sit clita dolores accusam ipsum eirmod diam, eirmod dolores dolores et voluptua dolores
+						lorem
+						stet
+						sanctus, lorem kasd sit magna justo amet sit et. Sed ipsum ea sadipscing rebum sit.</p>
+				</article>
+				<article>
+					<p>Ipsum diam ut ea no consetetur dolores, gubergren erat sea amet diam labore dolor sit. Ipsum
+						consetetur
+						vero duo est erat sea diam vero, nonumy consetetur elitr dolore dolores et takimata et
+						aliquyam
+						ut,
+						eos
+						tempor vero rebum diam takimata ut diam. Ipsum nonumy erat takimata dolore ut dolores labore
+						dolores.
+						Stet dolor accusam kasd ea, ut stet vero sit est erat stet sadipscing sed. Dolores invidunt
+						diam
+						sit
+						ipsum aliquyam magna ut amet elitr. Aliquyam sit justo ea ea aliquyam stet no aliquyam
+						lorem,
+						invidunt
+						nonumy sed vero dolor dolore dolores dolores. Sed clita nonumy sed erat, labore voluptua
+						accusam
+						ipsum
+						amet invidunt. Et et sanctus eos amet duo dolores eos aliquyam, at vero ipsum dolor
+						gubergren
+						magna
+						sadipscing rebum aliquyam, invidunt dolor et kasd amet et takimata ipsum elitr takimata. Duo
+						sanctus
+						lorem sea at. Et diam ea diam et sed voluptua. Sed clita nonumy nonumy no elitr tempor sit.
+						Et
+						sadipscing nonumy no sea. Dolor dolore dolor clita invidunt et, labore erat lorem labore et.
+						Lorem
+						at
+						sit clita dolores accusam ipsum eirmod diam, eirmod dolores dolores et voluptua dolores
+						lorem
+						stet
+						sanctus, lorem kasd sit magna justo amet sit et. Sed ipsum ea sadipscing rebum sit.</p>
+				</article>
+				<article>
+					<p>Ipsum diam ut ea no consetetur dolores, gubergren erat sea amet diam labore dolor sit. Ipsum
+						consetetur
+						vero duo est erat sea diam vero, nonumy consetetur elitr dolore dolores et takimata et
+						aliquyam
+						ut,
+						eos
+						tempor vero rebum diam takimata ut diam. Ipsum nonumy erat takimata dolore ut dolores labore
+						dolores.
+						Stet dolor accusam kasd ea, ut stet vero sit est erat stet sadipscing sed. Dolores invidunt
+						diam
+						sit
+						ipsum aliquyam magna ut amet elitr. Aliquyam sit justo ea ea aliquyam stet no aliquyam
+						lorem,
+						invidunt
+						nonumy sed vero dolor dolore dolores dolores. Sed clita nonumy sed erat, labore voluptua
+						accusam
+						ipsum
+						amet invidunt. Et et sanctus eos amet duo dolores eos aliquyam, at vero ipsum dolor
+						gubergren
+						magna
+						sadipscing rebum aliquyam, invidunt dolor et kasd amet et takimata ipsum elitr takimata. Duo
+						sanctus
+						lorem sea at. Et diam ea diam et sed voluptua. Sed clita nonumy nonumy no elitr tempor sit.
+						Et
+						sadipscing nonumy no sea. Dolor dolore dolor clita invidunt et, labore erat lorem labore et.
+						Lorem
+						at
+						sit clita dolores accusam ipsum eirmod diam, eirmod dolores dolores et voluptua dolores
+						lorem
+						stet
+						sanctus, lorem kasd sit magna justo amet sit et. Sed ipsum ea sadipscing rebum sit.</p>
+				</article>
+				<article>
+					<p>Ipsum diam ut ea no consetetur dolores, gubergren erat sea amet diam labore dolor sit. Ipsum
+						consetetur
+						vero duo est erat sea diam vero, nonumy consetetur elitr dolore dolores et takimata et
+						aliquyam
+						ut,
+						eos
+						tempor vero rebum diam takimata ut diam. Ipsum nonumy erat takimata dolore ut dolores labore
+						dolores.
+						Stet dolor accusam kasd ea, ut stet vero sit est erat stet sadipscing sed. Dolores invidunt
+						diam
+						sit
+						ipsum aliquyam magna ut amet elitr. Aliquyam sit justo ea ea aliquyam stet no aliquyam
+						lorem,
+						invidunt
+						nonumy sed vero dolor dolore dolores dolores. Sed clita nonumy sed erat, labore voluptua
+						accusam
+						ipsum
+						amet invidunt. Et et sanctus eos amet duo dolores eos aliquyam, at vero ipsum dolor
+						gubergren
+						magna
+						sadipscing rebum aliquyam, invidunt dolor et kasd amet et takimata ipsum elitr takimata. Duo
+						sanctus
+						lorem sea at. Et diam ea diam et sed voluptua. Sed clita nonumy nonumy no elitr tempor sit.
+						Et
+						sadipscing nonumy no sea. Dolor dolore dolor clita invidunt et, labore erat lorem labore et.
+						Lorem
+						at
+						sit clita dolores accusam ipsum eirmod diam, eirmod dolores dolores et voluptua dolores
+						lorem
+						stet
+						sanctus, lorem kasd sit magna justo amet sit et. Sed ipsum ea sadipscing rebum sit.</p>
+				</article>
+			</div>
+		</section>
+		<footer class="rodape">
+			<div class="mapa_site">
+				MAPA DO SITE
+			</div>
+			<div class="criadores">
+				<h1>CRIADORES</h1>
+				<ul>
+					<a href="#">
+						<li>Douglas</li>
+					</a>
+					<a href="#">
+						<li>Giovanna</li>
+					</a>
+				</ul>
+			</div>
+			<div class="feedback">
+				FEEDBACK
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
