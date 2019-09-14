@@ -1,172 +1,217 @@
-body, html{
-    margin: 0;
-    padding: 0;
-}
+/* Estilização geral da página */
 .main{
-    max-width: 1200px;
-    background-color: lightgray;
-    margin: 0 auto;
-    overflow: hidden;
+    max-width: 1200px;/* Largura máxima da página */
+    background-color: lightgray;/* Cor do fundo da página */
+    margin: 0 auto;/* Centraliza a página */
+    
+    /* Com a propriedade Overflow (sobrecarga) do CSS, podemos escolher o que deverá acontecer se
+    o conteúdo ultrapassar o tamanho de uma DIV. Podemos adicionar barra de rolagem, ocultar o
+    conteúdo ultrapassado, etc. Essa propriedade decide o que fazer se o conteúdo exceder o tamanho
+    de um elemento, no nosso exemplo a DIV. */
+    /* Tipos de overflow:
+    hidden ->  Corta o conteúdo que ultrapassa o tamanho da DIV.
+    scroll -> Mostra as barras de rolagem, vertical e horizontal, mesmo que não seja necessário.
+    auto -> Cria barra de rolagem apenas quando necessário.*/
+    overflow: auto;/* Ajusta o fundo do site ao conteúdo */
 }
+
+/* Estilização geral do cabeçalho do site */
 .topo{
-    width: 100%;
-    height: 100%;
+    width: 100%;/* A div topo está utilizando 100%(1200px) da largura da página */
+    height: 170px;/* A altura do cabeçalho */
 }
+
+/* Estilização da logo da página */
 .logo img{
-	width: 150px;    /* largura da imagem */
-	height: 150px;   /*  altura da imagem  */
-	padding-top: 10px; /* margem do topo */
-    float: left;
-    margin: 0 auto;
-    clear: right;
+	width: 150px;/* Largura da imagem */
+    height: 150px;/*  Altura da imagem  */
 }
+.logo{
+	margin-top: 10px;/* Posição da imagem na sua própria div */
+    float: left;/* Joga a imagem para o lado esquerdo e deixa o título ficar ao lado direito da imagem */
+}
+
+/* Estilização do título da página */
 .titulo{
-    font-size: 6em;
-    padding: 50px 20px 0 20px;
-    float: left;
+    font-size: 6em;/* Tamanho a fonte do título */
+    margin: 50px 20px 0 20px;/* Posição do texto no cabeçalho na sua própria div */
+    float: left;/* Joga o título para o lado esquerdo e deixa o login ficar ao lado direito do título */
 }
+
+/* Estilização da área de login do cabeçalho */
 .login{    
-    float: right;
-    margin: 30px 30px 0 0;
+    float: right;/* Joga o login para o lado direito da página facilitando o encaixe do título e da imagem no lado esquerdo */
+    margin: 10px 30px 0 0;/* Posiciona o login na sua própria div */
 }
+
+/* Estilização do campo de e-mail do login */
 .login .e-mail{
-    display: block;
-    padding: 4px 5px;
-    margin-bottom: 5px;
-    border: none;
+    display: block;/* Deixa o campo de e-mail sozinho na linha */
+    padding: 4px 5px;/* Tamanho do campo de e-mail (largura e altura) */
+    margin-bottom: 10px;/* Espaçamento entre o campo de senha e o de e-mail */
+    border: none;/* Remove a borda do campo de texto */
 }
+
+/* Estilização do campo de senha do login */
 .login .senha{
-    display: block;
-    padding: 4px 5px;
-    border: none;
+    display: block;/* Deixa o campo de senha sozinho na linha */
+    padding: 4px 5px;/* Tamanho do campo de senha (largura e altura) */
+    margin-bottom: 10px;/* Espaçamento entre o botão de login e o campo de senha */
+    border: none;/* Remove a borda do campo de texto */    
 }
+
+/* Estilização do botão de login */
 .login .logar{
-    display: block;
-    border: none;
-    text-decoration: none;
-    text-align: center;
-    padding: 10px 0px;
-    width: 100%;
-    margin-bottom: 5px;
-    background-color: #999;
-    transition: background-color 0.5s;
+    display: block;/* Deixa o botão de login na sua própria linha */
+    border: none;/* Remove a borda do botão */
+    padding: 10px 0px;/* Tamanho do botão (altura) */
+    width: 100%;/* O botão toma a largura da div em que ele se encontra (login) */
+    margin-bottom: 5px;/* Distância entre o cadastro e o botão de login */
+    background-color: #999;/* Cor do botão de login */
+    transition: background-color 0.5s;/* Tempo para a cor do botão mudar quando o cursor estiver sobre ele */
 }
+
+/* Estilização do botão de login com o mouse sobre ele */
 .login .logar:hover{    
-    background-color: #bbb;
-    color: #222;
-    cursor: pointer;
+    background-color: #bbb;/* Cor do botão */
+    color: #222;/* Cor da letra */
+    cursor: pointer;/* A forma que o cursor irá assumir */
 }
+
+/* Estilização do cadastro */
 .login p{
-    text-align: center;
-    font-size: 0.8em;
+    text-align: center;/* Centralização do texto na div login */
+    font-size: 0.8em;/* Tamanho da fonte */
 }
+
+/* Estilização geral da barra de menu e pesquisa */
 .topo2{
-    width: 100%;
-    height: 100%;
-    float: left;
-    margin: 10px 0;
+    width: 100%;/* A barra de menu e pesquisa ocupará toda a largura da página */
+    height: 46px;/* Altura da barra de menu e pesquisa */
+    margin: 10px 0;/* Distância do cabeçalho e do conteúdo da página em relação a barra de menu e pesquisa */
 }
+
+/* Estilização geral do menu */
 .menu{
-    float: left;
-    margin: 11.5px 0px 0px 0;
-    color: #fff;
-    font-size: 25px;
-    background-color: #000;
+    float: left;/* Joga o menu para a esquerda e deixa a pesquisa na mesma linha (Dúvida) */
+    color: #fff;/* Cor dos pipes do menu */
+    font-size: 25px;/* Tamanho dos pipes */
+    background-color: #000;/* Cor de fundo do menu */
 }
+
+/* Estilização geral do menu principal */
 .menu ul{
-    padding: 0;
-    list-style: none;
-    float: left;
-    text-align: center;
-    position: relative;
+    float: left;/* Tirar dúvidas com o luiz */
+    list-style: none;/* Remove a estlização de lista padrão */
+    position: relative;/* Deixa o submenu sólido (dúvidas) */
 }
+
+/* Mecânica do submenu */
 .menu ul ul{
-    display: none;
+    display: none;/* Fazendo o submenu ficar invisivel */
 }
-.menu ul li:hover > ul{
-    display: block;
+
+/* Mecânica do submenu */
+.menu ul li:hover > ul{/* Direcionando comando para uma tag (>) */
+    display: block;/* O submenu aparece quando o mouse passa em cima de uma li do menu principal */
 }
+
+/* Estilização de cada item do menu */
 .menu ul li{
-    display: inline-block;
-    background-color: #000;
-    width: 148.9px;
-    height: 44px;
-    list-style: none;
-    text-align: center;
+    display: inline-block;/* Deixa todos os itens do menu na mesma linha */
+    background-color: #000;/* Direcionando comando para uma tag (>) */
+    width: 148.9px;/* Largura que cada item do menu ocupa */
+    list-style: none;/* Remove a estilização de lista padrão */
+    text-align: center;/* Centraliza todos os itens no seu próprio espaço */
     line-height: 44px;/*Centraliza o texto verticalmente*/
-    font-size: 25px;
-    transition: background-color 0.4s;
+    height: 44px;/* Buga o submenu */
 }
+
+/* Estilização dos links do menu */
 .menu ul li a{
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    width: 100%;
-    transition: background-color, color 0.4s;
+    font-size: 25px;/* Tamanho da fonte */
+    padding: 7px 30px;/* Bordas internas dos links */
+    text-decoration: none;/* Remove a estilização padrão dos links (sublinhado e azul) */
+    color: #fff;/* Cor dos links */
+    transition: background-color, color 0.4s;/* Tempo para a transição de cor de fundo quando o mouse estiver sobre um dos itens */
 }
+
+/* Mudanças quando o cursor estiver sobre os links */
 .menu ul a:hover{
     color: #000;
     background-color: #fff;
 }
+
+/* Estilização geral da DIV de pesquisa */
 .pesquisa{
-    width: 250px;
-    height: 100%;
-    float: left;
-    margin-top: 11.5px
+    width: 250px;/* Largura que a div ocupará na linha */
+    float: right;/* Faciliatando a encaixe do menu e da pesquisa na mesma linha */
 }
+
+/* Personalização do campo de pesquisa */
 .pesquisa input{
-    padding: 10px 40px 10px 10px;
-    line-height: 24px;
-    width: 159px;
+    padding: 13.8px 40px 14px 10px;/* Tamanho do campo de pesquisa */
+    
+    width: 159px;/* Largura do campo de pesquisa */
     background-color: #eee;
     border: none;
-    float: left;
+    float: left;/* Encaixa o botão de pesquisa ao lado do campo de pesquisa */
 }
+
+/* Personalização do botão de pesquisa */
 .pesquisa button{
-    height: 43px;
-    width: 40.5px;
+    height: 43px;/* Altura do botão */
+    width: 40.5px;/* Largura do botão */
     background-color: #999;
     color: #000;
     border: none;
-    text-align: center;
-    text-decoration: none;
     transition: background-color 0.4s;
 }
+
+/* Estilização do botão de pesquisa com o cursor sobre ele */
 .pesquisa button:hover{
     background-color: #bbb;
     color: #222;
-    cursor: pointer;
+    cursor: pointer;/* Forma que o cursor terá ao passar por cima do botão */
 }
+
+/* Estilização da imagem do botão de pesquisa */
 .pesquisa button img{
-    width: 30px;    /* largura da imagem */
-	height: 30px;   /*  altura da imagem  */
-	margin-top: 2px; /* margem do topo */
-    margin: 0 auto;
+    width: 30px;/* largura da imagem */
+	height: 30px;/*  altura da imagem  */
+	margin-top: 2px;/* margem do topo */
 }
+
+/* Estilização geral do conteúdo do site */
 .cont{
-    float: left;
     width: 100%;
+    height: 770px;
 }
+
+/* Estilização da barra lateral do site */
 .conto_semanal{
     float: left;
     width: 300px;
 	border: #000 solid 1px;
 }
+
+/* Estilização dos artigos do site */
 .artigos{
     float: right;
     width: 895px;
 }
+
+/* Estilização dos textos dos arigos */
 .artigos p{
-    margin: 10px;
+    margin: 0px 10px 10px 10px;
     padding: 10px;
 	border: #000 solid 1px;
 }
-.artigos .sem_margem{
-    margin-top: 0;
-}
+
+/* Estilização geral do rodapé da página */
 .rodape{
     width: 100%;
-    float: left;
+    float: left;/* Dúvidas */
 }
 .mapa_site{
 	float: left;
