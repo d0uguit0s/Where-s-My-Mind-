@@ -23,11 +23,11 @@
 
 /* Estilização da logo da página */
 .logo img{
-	width: 150px;/* Largura da imagem */
+    width: 150px;/* Largura da imagem */
     height: 150px;/*  Altura da imagem  */
 }
 .logo{
-	margin-top: 10px;/* Posição da imagem na sua própria div */
+    margin-top: 10px;/* Posição da imagem na sua própria div */
     float: left;/* Joga a imagem para o lado esquerdo e deixa o título ficar ao lado direito da imagem */
 }
 
@@ -178,8 +178,8 @@
 /* Estilização da imagem do botão de pesquisa */
 .pesquisa button img{
     width: 30px;/* largura da imagem */
-	height: 30px;/*  altura da imagem  */
-	margin-top: 2px;/* margem do topo */
+    height: 30px;/*  altura da imagem  */
+    margin-top: 2px;/* margem do topo */
 }
 
 /* Estilização geral do conteúdo do site */
@@ -192,9 +192,13 @@
 .conto_semanal{
     float: left;
     width: 300px;
-	border: #000 solid 1px;
+    border: #000 solid 1px;
 }
 
+.conto_semanal img{
+    margin-top: 10px; /* margem do topo */
+    margin-left: 10px; 
+}
 /* Estilização dos artigos do site */
 .artigos{
     float: right;
@@ -205,36 +209,58 @@
 .artigos p{
     margin: 0px 10px 10px 10px;
     padding: 10px;
-	border: #000 solid 1px;
+    border: #000 solid 1px;
 }
-
+.sem_margem img{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.sem_margem0 img{
+    width: 250px;
+    height: 280px;
+    float: left;
+    margin-top: 5px; /* margem do topo */
+    margin-left: 10px; 
+    margin-right: 10px;
+}
+.sem_margem1 img{
+    width: 400px;
+    height: 250px;
+    margin-top: 5px; /* margem do topo */
+    margin-left: 200px; 
+}
+.sem_margem2 img{
+    margin-top: 5px; /* margem do topo */
+    margin-left: 80px; 
+}
 /* Estilização geral do rodapé da página */
 .rodape{
     width: 100%;
     float: left;/* Dúvidas */
 }
 .mapa_site{
-	float: left;
-	padding: 12% 12% 12% 12%;
-	border: #000 solid 1px;
+    float: left;
+    padding: 12% 12% 12% 12%;
+    border: #000 solid 1px;
 }
 .criadores{
-	float: left;
-	padding: 0% 13.1% 12% 13.1%;
-	border: #000 solid 1px;
-	margin: 0 auto;
+    float: left;
+    padding: 0% 13.1% 12% 13.1%;
+    border: #000 solid 1px;
+    margin: 0 auto;
 }
 .criadores h1{
-	font-size: 1em;
+    font-size: 1em;
 }
 .criadores a{
-	text-decoration: none;
+    text-decoration: none;
 }
 .criadores ul{
-	border: #000 solid 1px;
+    border: #000 solid 1px;
 }
 .feedback{
-	float: right;
-	padding: 12%;
-	border: #000 solid 1px;
+    float: right;
+    padding: 12%;
+    border: #000 solid 1px;
 }
