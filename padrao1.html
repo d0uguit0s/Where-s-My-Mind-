@@ -1,0 +1,411 @@
+/* Estilização geral da página */
+.main{
+    max-width: 1520px;/* Largura máxima da página */
+    background-color: lightgray;/* Cor do fundo da página */
+    margin: 0 auto;/* Centraliza a página */
+    
+    /* Com a propriedade Overflow (sobrecarga) do CSS, podemos escolher o que deverá acontecer se
+    o conteúdo ultrapassar o tamanho de uma DIV. Podemos adicionar barra de rolagem, ocultar o
+    conteúdo ultrapassado, etc. Essa propriedade decide o que fazer se o conteúdo exceder o tamanho
+    de um elemento, no nosso exemplo a DIV. */
+    /* Tipos de overflow:
+    hidden ->  Corta o conteúdo que ultrapassa o tamanho da DIV.
+    scroll -> Mostra as barras de rolagem, vertical e horizontal, mesmo que não seja necessário.
+    auto -> Cria barra de rolagem apenas quando necessário.*/
+    overflow: hidden;/* Ajusta o fundo do site ao conteúdo flutuante (float) */
+}
+
+
+/* Estilização geral do cabeçalho do site */
+.topo{
+    width: 1520px;/* A div topo está utilizando 100% da largura da página */
+    height: 170px;/* A altura do cabeçalho */
+}
+
+/* Estilização da logo da página */
+.logo{
+    float: left;
+    width: 170px;
+    height: 100%;
+    position: relative;
+}
+.logo img{
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    left: 10px;
+}
+
+/* Estilização do título da página */
+.titulo{
+    font-size: 8em;/* Tamanho a fonte do título */
+    width: 1080px;
+    float: left;/* Joga o título para o lado esquerdo e deixa o login ficar ao lado direito do título */
+    text-align: center;
+    line-height: 170px;
+}
+
+/* Estilização da área de login do cabeçalho */
+.login{    
+    float: right;/* Joga o login para o lado direito da página facilitando o encaixe do título e da imagem no lado esquerdo */
+    width: 260px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.e-mail{
+    margin-right: 10px;
+}
+/* Estilização do campo de e-mail do login */
+.login .e-mail input{
+    float: right;
+    padding: 6px 5px;/* Tamanho do campo de e-mail (largura e altura) */
+    margin-bottom: 15px;/* Espaçamento entre o campo de senha e o de e-mail */
+    border: none;/* Remove a borda do campo de texto */
+    width: 205.5px;
+}
+.login .e-mail img{
+    float: left;
+    width: 30px;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.senha{
+    margin-right: 10px;
+}
+
+/* Estilização do campo de senha do login */
+.login .senha input{
+    float: right;
+    padding: 6px 5px;/* Tamanho do campo de senha (largura e altura) */
+    margin-bottom: 15px;/* Espaçamento entre o botão de login e o campo de senha */
+    border: none;/* Remove a borda do campo de texto */    
+    width: 205.5px;
+}
+.login .senha img{
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+/* Estilização do botão de login */
+.login .logar{
+    border: none;/* Remove a borda do botão */
+    padding: 10px 0px;/* Tamanho do botão (altura) */
+    width: 175px;/* O botão toma a largura da div em que ele se encontra (login) */
+    margin-bottom: 5px;/* Distância entre o cadastro e o botão de login */
+    margin-left: 10px;
+    background-color: #999;/* Cor do botão de login */
+    transition: background-color 0.5s;/* Tempo para a cor do botão mudar quando o cursor estiver sobre ele */
+    float: left;
+}
+
+/* Estilização do botão de login do facebook */
+.login .facebook{
+    border: none;/* Remove a borda do botão */
+    border-left: solid #fff 1px;
+    width: 36px;/* O botão toma a largura da div em que ele se encontra (login) */
+    height: 36px;
+    margin-bottom: 5px;/* Distância entre o cadastro e o botão de login */
+    background-color: none;/* Cor do botão de login */
+    transition: background-color 0.5s;/* Tempo para a cor do botão mudar quando o cursor estiver sobre ele */
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+.login .facebook img{
+    width: 36px;
+    height: 36px;
+    top: 0px;
+    right: 0;
+    position: absolute;
+}
+
+/* Estilização do botão de login do google */
+.login .google{
+    border: none;/* Remove a borda do botão */
+    border-left: solid #fff 1px;
+    width: 36px;/* O botão toma a largura da div em que ele se encontra (login) */
+    height: 36px;
+    margin-bottom: 5px;/* Distância entre o cadastro e o botão de login */
+    background-color: none;/* Cor do botão de login */
+    transition: background-color 0.5s;/* Tempo para a cor do botão mudar quando o cursor estiver sobre ele */
+    position: relative;
+    cursor: pointer;
+}
+.login .google img{
+    width: 36px;
+    height: 36px;
+    top: 0px;
+    right: 0;
+    position: absolute;
+}
+
+/* Estilização do botão de login com o mouse sobre ele */
+.login .logar:hover{    
+    background-color: #bbb;/* Cor do botão */
+    color: #222;/* Cor da letra */
+    cursor: pointer;/* A forma que o cursor irá assumir */
+}
+
+/* Estilização da linha de cadastro */
+.login p{
+    text-align: center;/* Centralização do texto na div login */
+    font-size: 0.8em;/* Tamanho da fonte */
+    clear: both;
+}
+.login a{
+    color: #00f;
+}
+
+
+/* Estilização geral da barra de menu e pesquisa */
+.topo2{
+    width: 1520px;/* A barra de menu e pesquisa ocupará toda a largura da página */
+    height: 55px;/* Altura da barra de menu e pesquisa */
+    margin-bottom: 10px;/* Distância do cabeçalho e do conteúdo da página em relação a barra de menu e pesquisa */
+}
+
+/* Estilização geral do menu */
+.menu{
+    width: 1200px;/*Largura do menu*/
+    height: 55px;/*Altura do menu*/
+    float: left;
+}
+
+/* Estilização geral do menu principal */
+.menu ul{
+    list-style: none;/*Remove o estilo de lista*/
+    position: relative;/*Serve apenas para remover o "position: static", assim fazendo o "position: absolute" do submenu respeitar esta*/
+}
+
+.menu li{
+    width: 200px;/*Largura de cada item, esta proprieade mantém os subitens na sua própria linha*/
+    float: left;/*Deixa todos os itens ao lado direito e na mesma linha*/
+}
+.menu a{
+    display: block;/*Deixa os links serem redimensionados*/
+    padding: 15px;/*Margem interna dos links*/
+    text-decoration: none;/*Remove o estilo padrão de link (sublinhado)*/
+    text-align: center;/*Centraliza o texto dos links*/
+    font-size: 1.5em;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Mecânica do submenu */
+.menu ul ul{
+    position: absolute;/*Faz o submenu respeitar a posição do pai(menu)*/
+    display: none/*Deixa o submenu invisivel*/
+}
+
+/* Mecânica do submenu */
+.menu ul li:hover > ul{
+    display: inline-block;/*Muda o display do submenu para se tornar visivel*/
+}
+
+/* Estilização de cada item do menu */
+.menu ul ul li{
+    float: none;/*Remove o "float: left" que foi declarado para todas as li do menu, dessa forma os itens ficam um embaixo do outro*/
+    border-bottom: 1px solid #fff;/*Borda de baixo, para criar uma divisória entre os itens*/
+    width: 200px;
+}
+
+/* Mudanças quando o cursor estiver sobre os links */
+.menu a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/* Estilização geral da DIV de pesquisa */
+.pesquisa{
+    width: 320px;/* Largura que a div ocupará na linha */
+    float: right;/* Faciliatando a encaixe do menu e da pesquisa na mesma linha */
+}
+
+/* Personalização do campo de pesquisa */
+.pesquisa input{
+    height: 55px;
+    width: 265px;/* Largura do campo de pesquisa */
+    background-color: #eee;
+    border: none;
+    float: left;/* Encaixa o botão de pesquisa ao lado do campo de pesquisa */
+}
+
+/* Personalização do botão de pesquisa */
+.pesquisa button{
+    height: 55px;/* Altura do botão */
+    width: 55px;/* Largura do botão */
+    background-color: #999;
+    color: #000;
+    border: none;
+    transition: background-color 0.4s;
+}
+
+/* Estilização do botão de pesquisa com o cursor sobre ele */
+.pesquisa button:hover{
+    background-color: #bbb;
+    color: #222;
+    cursor: pointer;/* Forma que o cursor terá ao passar por cima do botão */
+}
+
+/* Estilização da imagem do botão de pesquisa */
+.pesquisa button img{
+    width: 30px;/* largura da imagem */
+	height: 30px;/*  altura da imagem  */
+	margin-top: 2px;/* margem do topo */
+}
+
+
+/* Estilização geral do conteúdo do site */
+.cont{
+    width: 1520px;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.cont p{
+    font-size: 20px;
+}
+
+.cont header a{
+    color: #f00;
+}
+.cont header a:hover{
+    color: #f00;
+    text-decoration: underline;
+}
+.cont h2{
+    padding-top: 10px;
+}
+
+/* Estilização dos textos dos arigos */
+.cont p{
+    padding: 10px 20px;
+}
+.cont header{
+    text-align: center;
+}
+.artigos{
+    margin-bottom: 10px;
+}
+/* Estilização dos artigos do site */
+.artigos article{
+    border: solid 1px #aaa;
+    background-color: #fff;
+    display: block;
+    float: right;
+    width: 1520px;
+    height: 200px;
+    overflow: hidden;
+}
+.artigos img{
+    float: left;
+    height: 100%;
+    width: 400px;
+    margin-right: 15px;
+    margin-left: 10ox;
+    padding: 0;
+}
+
+/* Estilização geral do rodapé da página */
+.rodape{
+    width: 1520px;
+    float: left;/* Dúvidas */
+    border-top: 1px solid #000;
+    padding-top: 25px;
+    margin-top: 25px;
+}
+.rodape div{
+    width: 506.66px;
+	float: left;
+    text-align: center;
+    position: relative;
+}
+.mapa_site img{
+    width: 500px;
+    z-index: 1;
+}
+.mapa_site img:hover{
+    width: 1000px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -250px;
+}
+.social div{
+    width: 100px;
+    margin: 40px;
+    clear: both;
+    position: relative;
+    padding-bottom: 20px;
+}
+.social img{
+    width: 36px;
+    left: 110px;
+    position: absolute;
+}
+.social a{
+    font-size: 2em;
+    line-height: 36px;
+    text-decoration: none;
+    position: absolute;
+    color: #000;
+    left: 180px;
+}
+.feedback h3{
+    padding-bottom: 15px;
+}
+.feedback input{
+    display: none;
+}
+.feedback label{
+    font-size: 20px;
+    margin-left: 40px;
+    padding-left: 35px;
+    cursor: pointer;
+    position: relative;
+}
+.feedback label::before{
+    content: "";
+    width: 26px;
+    height: 26px;
+    border: solid 1px #000;
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: -1.5px;
+}
+.feedback label::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: solid 1px #000;
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 3px;
+    top: 1.5px;
+}
+.feedback input:checked + label::after{
+    background-color: #aaa;
+}
+.feedback textarea{
+    margin-top: 15px;
+    margin-left: 95px;
+    display: block;
+    padding-right: 50px;
+}
+.feedback button{
+    border: none;
+    background-color: aqua;
+    height: 50px;
+    margin-top: 0px;
+    padding: 0 158px 0 159px;
+    margin-left: 39px;
+}
