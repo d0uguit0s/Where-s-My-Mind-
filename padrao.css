@@ -1,6 +1,6 @@
 /* Estilização geral da página */
 .main{
-    max-width: 85%;/* Largura máxima da página */
+    max-width: 1520px;/* Largura máxima da página */
     background-color: lightgray;/* Cor do fundo da página */
     margin: 0 auto;/* Centraliza a página */
     
@@ -18,15 +18,14 @@
 
 /* Estilização geral do cabeçalho do site */
 .topo{
-    width: 100%;/* A div topo está utilizando 100%(1200px) da largura da página */
+    width: 1520px;/* A div topo está utilizando 100% da largura da página */
     height: 170px;/* A altura do cabeçalho */
-    border-bottom: 1px solid #000;
 }
 
 /* Estilização da logo da página */
 .logo{
     float: left;
-    width: 15%;
+    width: 170px;
     height: 100%;
     position: relative;
 }
@@ -39,8 +38,8 @@
 
 /* Estilização do título da página */
 .titulo{
-    font-size: 6em;/* Tamanho a fonte do título */
-    width: 65%;
+    font-size: 8em;/* Tamanho a fonte do título */
+    width: 1080px;
     float: left;/* Joga o título para o lado esquerdo e deixa o login ficar ao lado direito do título */
     text-align: center;
     line-height: 170px;
@@ -49,19 +48,21 @@
 /* Estilização da área de login do cabeçalho */
 .login{    
     float: right;/* Joga o login para o lado direito da página facilitando o encaixe do título e da imagem no lado esquerdo */
-    width: 19%;
+    width: 260px;
     padding: 5px;
     margin-top: 10px;
 }
 
+.e-mail{
+    margin-right: 10px;
+}
 /* Estilização do campo de e-mail do login */
 .login .e-mail input{
     float: right;
     padding: 6px 5px;/* Tamanho do campo de e-mail (largura e altura) */
     margin-bottom: 15px;/* Espaçamento entre o campo de senha e o de e-mail */
     border: none;/* Remove a borda do campo de texto */
-    width: 79%;
-    margin-left: 10px;
+    width: 205.5px;
 }
 .login .e-mail img{
     float: left;
@@ -71,14 +72,17 @@
     margin-bottom: 5px;
 }
 
+.senha{
+    margin-right: 10px;
+}
+
 /* Estilização do campo de senha do login */
 .login .senha input{
     float: right;
     padding: 6px 5px;/* Tamanho do campo de senha (largura e altura) */
     margin-bottom: 15px;/* Espaçamento entre o botão de login e o campo de senha */
     border: none;/* Remove a borda do campo de texto */    
-    width: 79%;
-    margin-left: 10px;
+    width: 205.5px;
 }
 .login .senha img{
     float: left;
@@ -92,8 +96,9 @@
 .login .logar{
     border: none;/* Remove a borda do botão */
     padding: 10px 0px;/* Tamanho do botão (altura) */
-    width: 70%;/* O botão toma a largura da div em que ele se encontra (login) */
+    width: 175px;/* O botão toma a largura da div em que ele se encontra (login) */
     margin-bottom: 5px;/* Distância entre o cadastro e o botão de login */
+    margin-left: 10px;
     background-color: #999;/* Cor do botão de login */
     transition: background-color 0.5s;/* Tempo para a cor do botão mudar quando o cursor estiver sobre ele */
     float: left;
@@ -103,8 +108,8 @@
 .login .facebook{
     border: none;/* Remove a borda do botão */
     border-left: solid #fff 1px;
-    width: 15%;/* O botão toma a largura da div em que ele se encontra (login) */
-    height: 35px;
+    width: 36px;/* O botão toma a largura da div em que ele se encontra (login) */
+    height: 36px;
     margin-bottom: 5px;/* Distância entre o cadastro e o botão de login */
     background-color: none;/* Cor do botão de login */
     transition: background-color 0.5s;/* Tempo para a cor do botão mudar quando o cursor estiver sobre ele */
@@ -124,8 +129,8 @@
 .login .google{
     border: none;/* Remove a borda do botão */
     border-left: solid #fff 1px;
-    width: 15%;/* O botão toma a largura da div em que ele se encontra (login) */
-    height: 35px;
+    width: 36px;/* O botão toma a largura da div em que ele se encontra (login) */
+    height: 36px;
     margin-bottom: 5px;/* Distância entre o cadastro e o botão de login */
     background-color: none;/* Cor do botão de login */
     transition: background-color 0.5s;/* Tempo para a cor do botão mudar quando o cursor estiver sobre ele */
@@ -153,19 +158,22 @@
     font-size: 0.8em;/* Tamanho da fonte */
     clear: both;
 }
+.login a{
+    color: #00f;
+}
 
 
 /* Estilização geral da barra de menu e pesquisa */
 .topo2{
-    width: 100%;/* A barra de menu e pesquisa ocupará toda a largura da página */
-    height: 46px;/* Altura da barra de menu e pesquisa */
+    width: 1520px;/* A barra de menu e pesquisa ocupará toda a largura da página */
+    height: 55px;/* Altura da barra de menu e pesquisa */
     margin-bottom: 10px;/* Distância do cabeçalho e do conteúdo da página em relação a barra de menu e pesquisa */
 }
 
 /* Estilização geral do menu */
 .menu{
-    width: 80%;/*Largura do menu*/
-    height: 45px;/*Altura do menu*/
+    width: 1200px;/*Largura do menu*/
+    height: 55px;/*Altura do menu*/
     float: left;
 }
 
@@ -176,7 +184,7 @@
 }
 
 .menu li{
-    width: 16.666%;/*Largura de cada item, esta proprieade mantém os subitens na sua própria linha*/
+    width: 200px;/*Largura de cada item, esta proprieade mantém os subitens na sua própria linha*/
     float: left;/*Deixa todos os itens ao lado direito e na mesma linha*/
 }
 .menu a{
@@ -204,7 +212,7 @@
 .menu ul ul li{
     float: none;/*Remove o "float: left" que foi declarado para todas as li do menu, dessa forma os itens ficam um embaixo do outro*/
     border-bottom: 1px solid #fff;/*Borda de baixo, para criar uma divisória entre os itens*/
-    width: 172px;
+    width: 200px;
 }
 
 /* Mudanças quando o cursor estiver sobre os links */
@@ -215,14 +223,14 @@
 
 /* Estilização geral da DIV de pesquisa */
 .pesquisa{
-    width: 20%;/* Largura que a div ocupará na linha */
+    width: 320px;/* Largura que a div ocupará na linha */
     float: right;/* Faciliatando a encaixe do menu e da pesquisa na mesma linha */
 }
 
 /* Personalização do campo de pesquisa */
 .pesquisa input{
-    line-height: 52px;
-    width: 217px;/* Largura do campo de pesquisa */
+    height: 55px;
+    width: 265px;/* Largura do campo de pesquisa */
     background-color: #eee;
     border: none;
     float: left;/* Encaixa o botão de pesquisa ao lado do campo de pesquisa */
@@ -230,8 +238,8 @@
 
 /* Personalização do botão de pesquisa */
 .pesquisa button{
-    height: 54px;/* Altura do botão */
-    width: 40.5px;/* Largura do botão */
+    height: 55px;/* Altura do botão */
+    width: 55px;/* Largura do botão */
     background-color: #999;
     color: #000;
     border: none;
@@ -255,25 +263,47 @@
 
 /* Estilização geral do conteúdo do site */
 .cont{
-    width: 100%;
-    height: 838px;
+    width: 1520px;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.cont p{
+    font-size: 20px;
+}
+
+.cont header a{
+    color: #f00;
+}
+.cont header a:hover{
+    color: #f00;
+    text-decoration: underline;
+}
+.cont h2{
+    padding-top: 10px;
+}
+
+/* Estilização dos textos dos arigos */
+.cont p{
+    padding: 10px 20px;
+}
+.cont header{
+    text-align: center;
 }
 
 /* Estilização da barra lateral do site */
 .conto_semanal{
     float: left;
-    width: 27%;
+    width: 350px;
     margin-left: 10px;
 	border: #aaa solid 1px;
     background-color: #fff;
     height: 837px;
-
 }
 
 .conto_semanal img{
-    margin-top: 0px; /* margem do topo */
-    height: 238.5px;
-    width: 348.5px;    
+    width: 350.5px;    
 }
 
 /* Estilização dos artigos do site */
@@ -284,89 +314,43 @@
     margin-bottom: 10px;
     display: block;
     float: right;
-    max-width: 70.555%;
+    width: 1135px;
     height: 200px;
     margin-right: 10px;
     overflow: hidden;
 }
-
-/* Estilização dos textos dos arigos */
-.artigos p{
-    padding: 20px 20px;
-}
-
-.artigos h2{
-    padding-top: 10px;
-}
-
-.p1 header{
-    text-align: center;
-}
-
-.p1 img{
-    display: block;
+.artigos img{
     float: left;
-    height: 200px;
-    margin-right: 10px;
-}
-
-.p2 header{
-    text-align: center;
-}
-
-.p2 img{
-    float: left;
-    height: 200px;
-    width: 200px;
-    margin-right: 10px;
-}
-
-.p3 header{
-    text-align: center;
-}
-
-.p3 img{
-    float: left;
-    height: 200px;
-    width: 300px;
-    margin-right: 10px;
-}
-
-.p4 header{
-    text-align: center;
-}
-
-.p4 img{
-    float: left;
-    height: 200px;
-    width: 300px;
-    margin-right: 10px;
+    height: 100%;
+    width: 400px;
+    margin-right: 15px;
+    padding: 0;
 }
 
 /* Estilização geral do rodapé da página */
 .rodape{
-    width: 100%;
+    width: 1520px;
     float: left;/* Dúvidas */
+    border-top: 1px solid #000;
+    padding-top: 25px;
 }
 .rodape div{
-    width: 33.1%;
+    width: 506.66px;
 	float: left;
     text-align: center;
     position: relative;
 }
 .mapa_site img{
-    width: 430px;
-    height: 300px;
+    width: 500px;
     z-index: 1;
 }
 .mapa_site img:hover{
-    width: 870px;
-    height: 600px;
+    width: 1000px;
     background-color: #fff;
     position: absolute;
     bottom: -250px;
 }
-.social1{
+.social div{
     width: 100px;
     margin: 40px;
     clear: both;
@@ -375,7 +359,6 @@
 }
 .social img{
     width: 36px;
-    height: 36px;
     left: 110px;
     position: absolute;
 }
@@ -427,13 +410,15 @@
 }
 .feedback textarea{
     margin-top: 15px;
-    margin-left: 60px;
+    margin-left: 95px;
     display: block;
+    padding-right: 50px;
 }
 .feedback button{
     border: none;
     background-color: aqua;
-    width: 305px;
     height: 50px;
     margin-top: 0px;
+    padding: 0 158px 0 159px;
+    margin-left: 39px;
 }
