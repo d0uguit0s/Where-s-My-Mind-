@@ -1,6 +1,7 @@
 /* Estilização geral da página */
 .main{
     max-width: 1200px;/* Largura máxima da página */
+    height: 1200px;
     background-color: lightgray;/* Cor do fundo da página */
     margin: 0 auto;/* Centraliza a página */
     
@@ -21,9 +22,11 @@
 }
 
 .titulo{
-    font-size: 6em;
-    margin: 50px 20px 0 20px;
-    float: left;
+    font-size: 7em;/* Tamanho a fonte do título */
+    width: 1050px;
+    float: left;/* Joga o título para o lado esquerdo e deixa o login ficar ao lado direito do título */
+    text-align: center;
+    line-height: 170px;
 }
 
 .cadastro{
