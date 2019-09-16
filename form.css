@@ -1,0 +1,36 @@
+/* Estilização geral da página */
+.main{
+    max-width: 1200px;/* Largura máxima da página */
+    background-color: lightgray;/* Cor do fundo da página */
+    margin: 0 auto;/* Centraliza a página */
+    
+}
+
+.topo{
+    width: 100%;/* A div topo está utilizando 100%(1200px) da largura da página */
+    height: 170px;/* A altura do cabeçalho */
+}
+
+.logo img{
+    width: 150px;/* Largura da imagem */
+    height: 150px;/*  Altura da imagem  */
+}
+.logo{
+    margin-top: 10px;
+    float: left;
+}
+
+.titulo{
+    font-size: 6em;
+    margin: 50px 20px 0 20px;
+    float: left;
+}
+
+.cadastro{
+    margin-top: 200px;
+    margin-left: 350px;
+}
+
+.corpo{
+    margin-left: 350px;
+}
