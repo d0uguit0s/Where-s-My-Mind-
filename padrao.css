@@ -1,6 +1,6 @@
 /* Estilização geral da página */
 .main{
-    max-width: 1200px;/* Largura máxima da página */
+    max-width: 85%;/* Largura máxima da página */
     background-color: lightgray;/* Cor do fundo da página */
     margin: 0 auto;/* Centraliza a página */
     
@@ -12,7 +12,7 @@
     hidden ->  Corta o conteúdo que ultrapassa o tamanho da DIV.
     scroll -> Mostra as barras de rolagem, vertical e horizontal, mesmo que não seja necessário.
     auto -> Cria barra de rolagem apenas quando necessário.*/
-    overflow: auto;/* Ajusta o fundo do site ao conteúdo */
+    overflow: hidden;/* Ajusta o fundo do site ao conteúdo flutuante (float) */
 }
 
 /* Estilização geral do cabeçalho do site */
@@ -21,27 +21,28 @@
     height: 170px;/* A altura do cabeçalho */
 }
 
+
 /* Estilização da logo da página */
-.logo img{
-    width: 150px;/* Largura da imagem */
-    height: 150px;/*  Altura da imagem  */
-}
 .logo{
-    margin-top: 10px;/* Posição da imagem na sua própria div */
-    float: left;/* Joga a imagem para o lado esquerdo e deixa o título ficar ao lado direito da imagem */
+    float: left;
+    background-color: #000;
+    width: 15%;
+    height: 100%;
 }
 
 /* Estilização do título da página */
 .titulo{
     font-size: 6em;/* Tamanho a fonte do título */
-    margin: 50px 20px 0 20px;/* Posição do texto no cabeçalho na sua própria div */
+    width: 65%;
     float: left;/* Joga o título para o lado esquerdo e deixa o login ficar ao lado direito do título */
+    text-align: center;
+    line-height: 170px;
 }
 
 /* Estilização da área de login do cabeçalho */
 .login{    
     float: right;/* Joga o login para o lado direito da página facilitando o encaixe do título e da imagem no lado esquerdo */
-    margin: 10px 30px 0 0;/* Posiciona o login na sua própria div */
+    width: 20%;
 }
 
 /* Estilização do campo de e-mail do login */
@@ -86,60 +87,60 @@
 
 /* Estilização geral da barra de menu e pesquisa */
 .topo2{
-    width: 100%;/* A barra de menu e pesquisa ocupará toda a largura da página */
+    width: 1200px;/* A barra de menu e pesquisa ocupará toda a largura da página */
     height: 46px;/* Altura da barra de menu e pesquisa */
     margin: 10px 0;/* Distância do cabeçalho e do conteúdo da página em relação a barra de menu e pesquisa */
 }
 
 /* Estilização geral do menu */
 .menu{
-    float: left;/* Joga o menu para a esquerda e deixa a pesquisa na mesma linha (Dúvida) */
-    color: #fff;/* Cor dos pipes do menu */
-    font-size: 25px;/* Tamanho dos pipes */
-    background-color: #000;/* Cor de fundo do menu */
+    width: 100%;/*Largura do menu*/
+    height: 50px;/*Altura do menu*/
+    background-color: #000;
 }
 
 /* Estilização geral do menu principal */
 .menu ul{
-    float: left;/* Tirar dúvidas com o luiz */
-    list-style: none;/* Remove a estlização de lista padrão */
-    position: relative;/* Deixa o submenu sólido (dúvidas) */
+    list-style: none;/*Remove o estilo de lista*/
+    position: relative;/*Serve apenas para remover o "position: static", assim fazendo o "position: absolute" do submenu respeitar esta*/
+}
+
+.menu li{
+    width: 150px;/*Largura de cada item, esta proprieade mantém os subitens na sua própria linha*/
+    float: left;/*Deixa todos os itens ao lado direito e na mesma linha*/
+    /* background-color: #eee;
+    border: 1px #f00 solid; */
+}
+.menu a{
+    display: block;/*Deixa os links serem redimensionados*/
+    padding: 15px;/*Margem interna dos links*/
+    text-decoration: none;/*Remove o estilo padrão de link (sublinhado)*/
+    text-align: center;/*Centraliza o texto dos links*/
+    background-color: #000;
+    color: #fff;
 }
 
 /* Mecânica do submenu */
 .menu ul ul{
-    display: none;/* Fazendo o submenu ficar invisivel */
+    position: absolute;/*Faz o submenu respeitar a posição do pai(menu)*/
+    display: none/*Deixa o submenu invisivel*/
 }
 
 /* Mecânica do submenu */
-.menu ul li:hover > ul{/* Direcionando comando para uma tag (>) */
-    display: block;/* O submenu aparece quando o mouse passa em cima de uma li do menu principal */
+.menu ul li:hover > ul{
+    display: inline-block;/*Muda o display do submenu para se tornar visivel*/
 }
 
 /* Estilização de cada item do menu */
-.menu ul li{
-    display: inline-block;/* Deixa todos os itens do menu na mesma linha */
-    background-color: #000;/* Direcionando comando para uma tag (>) */
-    width: 148.9px;/* Largura que cada item do menu ocupa */
-    list-style: none;/* Remove a estilização de lista padrão */
-    text-align: center;/* Centraliza todos os itens no seu próprio espaço */
-    line-height: 44px;/*Centraliza o texto verticalmente*/
-    height: 44px;/* Buga o submenu */
-}
-
-/* Estilização dos links do menu */
-.menu ul li a{
-    font-size: 25px;/* Tamanho da fonte */
-    padding: 7px 30px;/* Bordas internas dos links */
-    text-decoration: none;/* Remove a estilização padrão dos links (sublinhado e azul) */
-    color: #fff;/* Cor dos links */
-    transition: background-color, color 0.4s;/* Tempo para a transição de cor de fundo quando o mouse estiver sobre um dos itens */
+.menu ul ul li{
+    float: none;/*Remove o "float: left" que foi declarado para todas as li do menu, dessa forma os itens ficam um embaixo do outro*/
+    border-bottom: 1px solid #fff;/*Borda de baixo, para criar uma divisória entre os itens*/
 }
 
 /* Mudanças quando o cursor estiver sobre os links */
-.menu ul a:hover{
-    color: #000;
+.menu a:hover{
     background-color: #fff;
+    color: #000;
 }
 
 /* Estilização geral da DIV de pesquisa */
@@ -178,8 +179,8 @@
 /* Estilização da imagem do botão de pesquisa */
 .pesquisa button img{
     width: 30px;/* largura da imagem */
-    height: 30px;/*  altura da imagem  */
-    margin-top: 2px;/* margem do topo */
+	height: 30px;/*  altura da imagem  */
+	margin-top: 2px;/* margem do topo */
 }
 
 /* Estilização geral do conteúdo do site */
@@ -192,13 +193,9 @@
 .conto_semanal{
     float: left;
     width: 300px;
-    border: #000 solid 1px;
+	border: #000 solid 1px;
 }
 
-.conto_semanal img{
-    margin-top: 10px; /* margem do topo */
-    margin-left: 10px; 
-}
 /* Estilização dos artigos do site */
 .artigos{
     float: right;
@@ -209,58 +206,36 @@
 .artigos p{
     margin: 0px 10px 10px 10px;
     padding: 10px;
-    border: #000 solid 1px;
+	border: #000 solid 1px;
 }
-.sem_margem img{
-    float: left;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-.sem_margem0 img{
-    width: 250px;
-    height: 280px;
-    float: left;
-    margin-top: 5px; /* margem do topo */
-    margin-left: 10px; 
-    margin-right: 10px;
-}
-.sem_margem1 img{
-    width: 400px;
-    height: 250px;
-    margin-top: 5px; /* margem do topo */
-    margin-left: 200px; 
-}
-.sem_margem2 img{
-    margin-top: 5px; /* margem do topo */
-    margin-left: 80px; 
-}
+
 /* Estilização geral do rodapé da página */
 .rodape{
     width: 100%;
     float: left;/* Dúvidas */
 }
 .mapa_site{
-    float: left;
-    padding: 12% 12% 12% 12%;
-    border: #000 solid 1px;
+	float: left;
+	padding: 12% 12% 12% 12%;
+	border: #000 solid 1px;
 }
 .criadores{
-    float: left;
-    padding: 0% 13.1% 12% 13.1%;
-    border: #000 solid 1px;
-    margin: 0 auto;
+	float: left;
+	padding: 0% 13.1% 12% 13.1%;
+	border: #000 solid 1px;
+	margin: 0 auto;
 }
 .criadores h1{
-    font-size: 1em;
+	font-size: 1em;
 }
 .criadores a{
-    text-decoration: none;
+	text-decoration: none;
 }
 .criadores ul{
-    border: #000 solid 1px;
+	border: #000 solid 1px;
 }
 .feedback{
-    float: right;
-    padding: 12%;
-    border: #000 solid 1px;
+	float: right;
+	padding: 12%;
+	border: #000 solid 1px;
 }
